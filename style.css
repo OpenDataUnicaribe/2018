@@ -1,0 +1,35 @@
+body {
+  padding:0;
+  margin: 0;
+}
+
+.box{
+  width:100vw;
+  height:100vh;
+}
+
+.box1{
+  position:relative;
+  background-color:orange;
+
+}
+
+.box2 {
+  background-color: violet;
+}
+
+.box3 {
+  background-color:aqua;
+}
+
+div img {
+  display:block;
+  position:fixed;
+}
+
+.title {
+  position:absolute;
+  top:50vh;
+  left:50vw;
+  transform:translate(-50%,-50%);
+}
