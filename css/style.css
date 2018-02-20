@@ -397,8 +397,8 @@ Third Box with magenta style color
    grid-template-columns: 15% 15% 40% 15% 15%;
    grid-template-rows: 15% 15% 40% 15% 15%;
    grid-template-areas:
-   "logo info info info inv"
-   "logo program program program inv"
+   ". info info info ."
+   ". program program program "
    ". program program program ."
    ". program program program ."
    ". program program program .";
@@ -406,7 +406,7 @@ Third Box with magenta style color
 
 }
 
-.logo {
+/*  .logo {
   grid-area: logo;
   width: 100%;
   transition: 0.25s;
@@ -421,7 +421,7 @@ Third Box with magenta style color
 
 .logo:hover, .inv:hover {
    width: 80%;
-}
+}   */
 
 .programa {
   grid-area: program;
