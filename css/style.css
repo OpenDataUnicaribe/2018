@@ -468,3 +468,13 @@ tr:hover {
     background-color: #e7cce7;
     font-size: 1.1em;
 }
+
+/*  Box 4  */
+
+.box4 {
+
+  width: 100vw;
+  height: 100vh;
+  background-color: green;
+
+}
