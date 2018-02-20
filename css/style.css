@@ -398,7 +398,7 @@ Third Box with magenta style color
    grid-template-rows: 15% 15% 40% 15% 15%;
    grid-template-areas:
    ". info info info ."
-   ". program program program "
+   ". program program program ."
    ". program program program ."
    ". program program program ."
    ". program program program .";
