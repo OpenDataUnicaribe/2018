@@ -87,6 +87,19 @@ header img:hover {
 
 }
 
+.title3 {
+
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  font-weight: 200;
+
+}
+
 /*
 
 Second container using CSS grid layout
@@ -285,6 +298,78 @@ Third Box with magenta style color
    width: 100vw;
    height: 100vh;
    background-color: magenta;
+   display: grid;
+   grid-template-columns: 15% 15% 40% 15% 15%;
+   grid-template-rows: 15% 15% 40% 15% 15%;
+   grid-template-areas:
+   "logo info info info inv"
+   "logo program program program inv"
+   ". program program program ."
+   ". program program program ."
+   ". program program program .";
 
 
+}
+
+.logo {
+  grid-area: logo;
+  width: 100%;
+  transition: 0.25s;
+}
+
+.inv {
+  grid-area: inv;
+  width: 100%;
+  transform: rotate(-180deg) rotateX(-180deg);
+  transition: 0.5s;
+}
+
+.logo:hover, .inv:hover {
+   width: 80%;
+}
+
+.programa {
+  grid-area: program;
+}
+
+.programtitle {
+  grid-area: info;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: 'Pacifico', serif, sans-serif;
+  font-size: 3em;
+}
+
+
+
+th {
+  text-align: center;
+  font-family: Arial;
+  font-size: 2em;
+}
+
+td  {
+  font-family: 'EB Garamond', sans-serif, serif;
+  font-size: 1.5em;
+}
+
+table tr td {
+  padding: 0;
+}
+table tr td:nth-child(2n+1) {
+  text-align: center;
+  width: 30%;
+}
+table tr td:nth-child(2n) {
+  width: 70%;
+}
+
+tr {
+   transition: background-color 0.25s ease-in, font-size 0.1s ease-out 0.25s;
+}
+
+tr:hover {
+    background-color: #e7cce7;
+    font-size: 1.1em;
 }
