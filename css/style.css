@@ -22,6 +22,49 @@ First container element, using position relative and absolute
   background-color: orange;
 }
 
+nav {
+  position: sticky;
+  width: 80%;
+  height: 50px;
+  top: 1%;
+  left: 10%;
+  background-color: rgba(0, 128, 0, 0.2);
+  border-radius: 10px;
+
+}
+
+nav ul {
+
+  display: flex;
+  float: right;
+
+}
+
+nav ul li {
+
+  list-style: none;
+
+}
+
+nav ul li a {
+
+  padding: 0 15px;
+  color: black;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-family: 'Pacifico', sans-serif;
+  transition: 0.5s;
+
+
+}
+
+nav ul li a:hover {
+
+    background-color: rgba(0, 128, 0, 0.4);
+
+}
+
+
 header img {
 
   width:30%;
@@ -119,7 +162,7 @@ header img:hover {
 	box-shadow: inset 0px 1px 2px rgba(0,0,0,0.5);
 }
 
-span {
+#news_ticker span {
 	float: left;
 	color: black;
 	background: rgba(255, 235, 59, 0.49);
@@ -139,7 +182,7 @@ span {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004b67', endColorstr='#003548',GradientType=0 );
 }
 
-ul {
+#news_ticker > ul {
 	float: left;
 	padding-left: 20px;
   -webkit-animation: ticker 10s cubic-bezier(1, 0, .5, 0) infinite;
@@ -149,7 +192,7 @@ ul {
 }
 
 
-ul:hover {
+#news_ticker > ul:hover {
   -webkit-animation-play-state: paused;
   -moz-animation-play-state: paused;
   -ms-animation-play-state: paused;
@@ -157,9 +200,10 @@ ul:hover {
 }
 
 
-li {line-height: 26px;
+div ul li {line-height: 26px;
 list-style-type: none;
 }
+
 #news_ticker a {
 	color: black;
 	text-decoration: none;
